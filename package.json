@@ -1,7 +1,7 @@
 {
-  "name": "samplefeedbackmodule",
-  "version": "0.1.5",
-  "description": "feedback module",
+  "name": "sampleprodtest",
+  "version": "0.0.2",
+  "description": "sample prod test",
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^16.8.6",
