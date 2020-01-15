@@ -37,7 +37,7 @@ class Feedback extends Component {
       
     return (
       <div className="feedback">
-          <Button appearance="subtle-link" className="text-decoration-none" onClick={()=>this.loadPerticularPage('feedback')}>
+          <Button appearance="subtle" className="text-decoration-none" onClick={()=>this.loadPerticularPage('feedback')}>
               <img src="https://prod-play.zephyr4jiracloud.com/connect/assets/images/icons/zephyr_feather_100x100.png" className="zephyr-icon"/>  Give Feedback
             </Button>
             <div className="splitter"></div>
