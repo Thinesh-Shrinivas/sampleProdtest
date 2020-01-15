@@ -9,21 +9,13 @@ class Feedback extends Component {
     this.state={
       dialogOpen:false
     }
+    this.toggleState = this.toggleState.bind(this);
   }
   toggleState(){
+    console.log('toggled')
     this.setState({dialogOpen: !this.state.dialogOpen});
   }
-  render() {
-    const centeredContainerStyles = {
-      display: 'flex',
-      justifyContent: 'center',
-    };
-    
-    const targetStyles = {
-      background: colors.G300,
-      padding: '10px',
-    };
-    
+  render() {  
     const scrollContainer = {
       maxHeight: 'inherit',
       maxWidth: 'inherit',
@@ -47,9 +39,8 @@ class Feedback extends Component {
       
     return (
       <div className="feedback">
-        <Button onClick={e=> console.log('hello world')} >Click me...</Button>
-        <InlineDialog content={dialogContent} isOpen={true}>
-          <div style={targetStyles}>I am the target</div>
+        <Button onClick={()=>this.toggleState()} >Click me...</Button>
+        <InlineDialog content={dialogContent} isOpen={this.state.dialogOpen}>
         </InlineDialog>
       </div>
     );

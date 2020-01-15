@@ -6970,26 +6970,20 @@ var Feedback = function (_Component) {
     _this.state = {
       dialogOpen: false
     };
+    _this.toggleState = _this.toggleState.bind(_this);
     return _this;
   }
 
   _createClass(Feedback, [{
     key: 'toggleState',
     value: function toggleState() {
+      console.log('toggled');
       this.setState({ dialogOpen: !this.state.dialogOpen });
     }
   }, {
     key: 'render',
     value: function render() {
-      var centeredContainerStyles = {
-        display: 'flex',
-        justifyContent: 'center'
-      };
-
-      var targetStyles = {
-        background: _theme.colors.G300,
-        padding: '10px'
-      };
+      var _this2 = this;
 
       var scrollContainer = {
         maxHeight: 'inherit',
@@ -7018,20 +7012,12 @@ var Feedback = function (_Component) {
         { className: 'feedback' },
         _react2.default.createElement(
           _button2.default,
-          { onClick: function onClick(e) {
-              return console.log('hello world');
+          { onClick: function onClick() {
+              return _this2.toggleState();
             } },
           'Click me...'
         ),
-        _react2.default.createElement(
-          _inlineDialog2.default,
-          { content: dialogContent, isOpen: true },
-          _react2.default.createElement(
-            'div',
-            { style: targetStyles },
-            'I am the target'
-          )
-        )
+        _react2.default.createElement(_inlineDialog2.default, { content: dialogContent, isOpen: this.state.dialogOpen })
       );
     }
   }]);
