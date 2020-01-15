@@ -13,15 +13,14 @@ class Feedback extends Component {
   }
   toggleState(){
     console.log('toggled')
-    this.setState({dialogOpen: !this.state.dialogOpen});
+     this.setState({dialogOpen: !this.state.dialogOpen});
   }
-  render() {  
+  render() {
     const scrollContainer = {
       maxHeight: 'inherit',
       maxWidth: 'inherit',
       overflow: 'auto',
     };
-    
     const oversizedStyles = {
       height: '200px',
       width: '200px',
@@ -39,8 +38,8 @@ class Feedback extends Component {
       
     return (
       <div className="feedback">
-        <Button onClick={()=>this.toggleState()} >Click me...</Button>
         <InlineDialog content={dialogContent} isOpen={this.state.dialogOpen}>
+        <Button onClick={()=>this.toggleState()} >Click me...</Button>
         </InlineDialog>
       </div>
     );

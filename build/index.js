@@ -6990,7 +6990,6 @@ var Feedback = function (_Component) {
         maxWidth: 'inherit',
         overflow: 'auto'
       };
-
       var oversizedStyles = {
         height: '200px',
         width: '200px',
@@ -7011,13 +7010,16 @@ var Feedback = function (_Component) {
         'div',
         { className: 'feedback' },
         _react2.default.createElement(
-          _button2.default,
-          { onClick: function onClick() {
-              return _this2.toggleState();
-            } },
-          'Click me...'
-        ),
-        _react2.default.createElement(_inlineDialog2.default, { content: dialogContent, isOpen: this.state.dialogOpen })
+          _inlineDialog2.default,
+          { content: dialogContent, isOpen: this.state.dialogOpen },
+          _react2.default.createElement(
+            _button2.default,
+            { onClick: function onClick() {
+                return _this2.toggleState();
+              } },
+            'Click me...'
+          )
+        )
       );
     }
   }]);
