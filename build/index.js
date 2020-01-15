@@ -6737,14 +6737,9 @@ var Feedback = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var oversizedStyles = {
-        height: '110px',
-        width: '150px'
-      };
-
       var dialogContent = _react2.default.createElement(
         'div',
-        { style: oversizedStyles },
+        { className: 'dialogue-options' },
         _react2.default.createElement(
           _button2.default,
           { appearance: 'subtle-link', className: 'text-decoration-none', onClick: function onClick() {
@@ -6773,7 +6768,7 @@ var Feedback = function (_Component) {
         { className: 'feedback' },
         _react2.default.createElement(
           _button2.default,
-          { appearance: 'subtle-link', className: 'text-decoration-none', onClick: function onClick() {
+          { appearance: 'subtle', className: 'text-decoration-none', onClick: function onClick() {
               return _this2.loadPerticularPage('feedback');
             } },
           _react2.default.createElement('img', { src: 'https://prod-play.zephyr4jiracloud.com/connect/assets/images/icons/zephyr_feather_100x100.png', className: 'zephyr-icon' }),
@@ -9719,7 +9714,7 @@ exports = module.exports = __webpack_require__(94)(false);
 
 
 // module
-exports.push([module.i, ".feedback{\n  max-width: 200px;\n  max-height:200px; \n  display: flex;\n}\n.zephyr-icon{\n  height: 26px;\n  min-width: 25px;\n  position: relative;\n  top: 5px;\n  text-decoration: none;\n}\n.splitter{\n  height: 22px;\n  position: relative;\n  top: 10px;\n  margin: 0 10px 0 3px;\n  border-left: 1px solid black;\n}\n.text-decoration-none{\n  text-decoration: none !important;\n}\n.help-button{\n  position: relative;\n  top: 3px;\n}\n", ""]);
+exports.push([module.i, ".feedback{\n  max-width: 200px;\n  max-height:200px; \n  display: flex;\n}\n.zephyr-icon{\n  height: 26px;\n  min-width: 25px;\n  position: relative;\n  top: 5px;\n  text-decoration: none;\n}\n.splitter{\n  height: 22px;\n  position: relative;\n  top: 10px;\n  margin: 0 10px 0 3px;\n  border-left: 1px solid black;\n}\n.text-decoration-none{\n  text-decoration: none !important;\n}\n.help-button{\n  position: relative;\n  top: 3px;\n}\n.dialogue-options{\n  height: 110px;\n  width: 150px;\n};\n", ""]);
 
 // exports
 

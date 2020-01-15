@@ -22,13 +22,8 @@ class Feedback extends Component {
   }
 
   render() {
-    const oversizedStyles = {
-       height: '110px',
-       width: '150px'
-    };
-    
  const dialogContent = (
-    <div style={oversizedStyles}>
+    <div className="dialogue-options">
     <Button appearance="subtle-link" className="text-decoration-none" onClick={()=>this.loadPerticularPage('documentation')}>Documentation</Button>
     <Button appearance="subtle-link" className="text-decoration-none" onClick={()=>this.loadPerticularPage('support')}>Support</Button>
     <Button appearance="subtle-link" className="text-decoration-none" onClick={()=>this.loadPerticularPage('vote')}>Vote on features</Button>
