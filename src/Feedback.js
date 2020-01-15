@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '@atlaskit/button';
 
 class Feedback extends Component {
 	constructor(props){
@@ -7,7 +8,7 @@ class Feedback extends Component {
   render() {
     return (
       <div className="feedback">
-        Hello Feedback
+        <Button onClick={e=> console.log('hello world')} >Click me...</Button>
       </div>
     );
   }

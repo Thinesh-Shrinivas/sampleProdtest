@@ -1,6 +1,6 @@
 {
   "name": "sampleprodtest",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "sample prod test",
   "main": "build/index.js",
   "peerDependencies": {
@@ -31,6 +31,7 @@
     "build": "webpack"
   },
   "devDependencies": {
+    "@atlaskit/button": "^13.3.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
