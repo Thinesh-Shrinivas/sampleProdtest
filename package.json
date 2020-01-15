@@ -1,6 +1,6 @@
 {
   "name": "sampleprodtest",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "sample prod test",
   "main": "build/index.js",
   "peerDependencies": {
@@ -14,7 +14,6 @@
     "@atlaskit/inline-dialog": "^12.1.7",
     "@atlaskit/select": "^9.1.1",
     "@atlaskit/single-select": "^8.0.0",
-    "@atlaskit/theme": "^9.1.1",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
@@ -38,15 +37,16 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.13.1",
+    "@atlaskit/theme": "^9.5.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1"
+    "babel-preset-env": "^1.5.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1"
   },
   "jest": {
     "snapshotSerializers": [
